@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,400;9..144,700&display=swap");
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Fraunces", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+:root {
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Cream);
+}
+
+.container .card {
+  background: var(--White);
+  max-width: 80%;
+  width: 400px;
+  border-radius: 8px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 640px;
+}
+
+.container .card img {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+}
+
+.container .card .text {
+  padding: 27.2px;
+  margin: 0%;
+}
+
+.container .card .text h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 4.8px;
+  color: var(--Dark-grayish-blue);
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.container .card .text h1 {
+  font-weight: 700;
+  line-height: 1em;
+  margin-bottom: 9.6px;
+  margin-right: 32px;
+}
+
+.container .card .text p {
+  font-weight: 500;
+  margin-bottom: 16px;
+  color: var(--Dark-grayish-blue);
+  line-height: 28.8px;
+}
+
+.container .card .text .price {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container .card .text .price .price-new {
+  font-weight: 700;
+  font-size: 35.2px;
+  color: var(--Dark-cyan);
+  vertical-align: middle;
+}
+
+.container .card .text .price .price-old {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--Dark-grayish-blue);
+  text-decoration: line-through;
+  margin: auto 0;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Dark-cyan);
+  height: 56px;
+  width: 100%;
+  margin-top: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--White);
+  font-family: var(--font-family2);
+  font-weight: 700;
+  font-size: 17px;
+}
